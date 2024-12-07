@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <style>
+        .image {
+            width: 360px;
+            height: 280px;
+            background-size: auto;
+        }
+        
+        .bg-container {
+            background-color: #f5f7fa;
+        }
+        
+        .number {
+            color: #323f4b;
+            background-color: #cbd2d9;
+            font-family: "Roboto";
+            font-size: 30px;
+            font-weight: bold;
+            border-style: solid;
+            border-width: 8px;
+            border-color: #e4e7eb;
+            border-radius: 12px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        
+        .operator {
+            color: #c4c4c4;
+            font-family: "Roboto";
+            font-size: 40px;
+        }
+        
+        .user-input {
+            text-align: center;
+            color: #323f4b;
+            background-color: #cbd2d9;
+            font-family: "Roboto";
+            font-size: 30px;
+            font-weight: bold;
+            width: 142px;
+            height: 60px;
+            border-style: solid;
+            border-width: 8px;
+            border-color: #e4e7eb;
+            border-radius: 12px;
+            margin: 20px;
+        }
+        
+        .game-result {
+            color: #ffffff;
+            background-color: #f5f7fa;
+            font-family: "Roboto";
+            font-size: 24px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHeFRFaa8h-DGl5Ag24mJLfNSSzeCm5CuUfA&s" class="image" />
+        <div class="bg-container pt-5 pb-5">
+            <span class="number m-2" id="firstNumber"></span>
+            <span class="operator m-1">+</span>
+            <span class="number m-2" id="secondNumber"></span>
+            <span class="operator m-1">=</span>
+            <input class="user-input" type="text" id="userInput" />
+            <div class="mt-4 mb-4">
+                <button id="checkButton" class="btn btn-success mr-3">
+                    Check
+                </button>
+                <button id="restartButton" class="btn btn-danger">
+                    Restart
+                </button>
+            </div>
+            <p class="game-result" id="gameResult"></p>
+        </div>
+    </div>
+    <script src="./AddingGame.js"></script>
+</body>
+
+</html>
